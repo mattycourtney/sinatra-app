@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'json'
 
 set :server, :thin
 connections = []
@@ -8,7 +9,7 @@ get '/' do
 end
 
 post '/post' do
-  connections.each { |out| out << "data: #{params['msg']}\n\n" unless out.closed? }
+  connections.each { |out| out << "data: #{params.to_json}\n\n" unless out.closed? }
   204
 end
 
