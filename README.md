@@ -7,7 +7,7 @@
 
 # vForum 2019 - Sinatra Application
 
-This project contains a small sinatra app used as a demo at vForum 2019. It listens on the default port 4567.
+This project contains a small sinatra app used as a demo at vFORUM 2019. It listens on the default port 4567.
 
 ## Running with Docker
 
