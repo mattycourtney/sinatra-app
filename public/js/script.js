@@ -9,7 +9,8 @@ es.onmessage = function (e) {
            <img src="/images/' + data.persona + '.jpg" class="card-img" alt="Headshot"> \
          </div> \
          <div class="col-md-8"><div class="card-body"> \
-           <p class="card-text">' + data.message + '</p> \
+	  <h5 class="card-title">' + data.persona + '</h5> \
+	  <p class="card-text">' + data.message + '</p> \
          </div> \
        </div> \
      </div> \
